@@ -1,7 +1,7 @@
 <?php
 //This is separate file to connect the database
 //constant variable
-$dbHOST = getenv('DB_HOST');
+$dbHost = getenv('DB_HOST');
 $dbName = getenv('DB_NAME');
 $dbUser = getenv('DB_USER');
 $dbPass = getenv('DB_PASS');
