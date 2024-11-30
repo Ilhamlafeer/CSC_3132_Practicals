@@ -1,10 +1,10 @@
 <?php
 //This is separate file to connect the database
 //constant variable
-define('SERVERNAME', '127.0.0.1:3306');
-define('USERNAME', 'root');
-define('PASSWORD', 'mariadb');
-define('DBNAME', 'students');
+$dbHOST = getenv('DB_HOST');
+$dbName = getenv('DB_NAME');
+$dbUser = getenv('DB_USER');
+$dbPass = getenv('DB_PASS');
 
 //Use Try-Catch to find errors
 try{
