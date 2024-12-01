@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+	<form action="addData.php" method="POST">
+		<table>
+	        	<tr><td align='right'>RegNo: <input type="text" name="RegNo"></td></tr>
+	        	<tr><td align='right'>Name: <input type="text" name="Name"></td></tr>
+	        	<tr><td align='right'>Age: <input type="number" name="Age"></td></tr>
+	        	<tr><td>Course: <select>
+										<option value="AMC">AMC</option>
+										<option value="CSC">CS</option>
+										<option value="ICT">IT</option>
+										<option value="ESc">ESc</option>
+									</select>
+					</td>
+				</tr>
+
+	        	<tr>
+	        		<input type="submit" name="Add new student">
+	        	</tr>
+	    </table>
+	</form>
+</body>
+</html>
