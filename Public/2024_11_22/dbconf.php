@@ -1,15 +1,15 @@
 <?php
 //This is separate file to connect the database
 //constant variable
-$host = getenv('DB_HOST') ?: 'db';
-$dbname = getenv('DB_NAME') ?: 'students';
-$user = getenv('DB_USER') ?: 'root';
-$pass = getenv('DB_PASS') ?: 'mariadb';
+define('SERVERNAME', '127.0.0.1:3306');
+define('USERNAME', 'root');
+define('PASSWORD', 'mariadb');
+define('DBNAME', 'students');
 
 //Use Try-Catch to find errors
 try{
     //connect with database
-    $connect = mysqli_connect($host, $user, $pass, $dbname);
+    $connect = mysqli_connect(SERVERNAME,USERNAME,PASSWORD,DBNAME);
 
     if(!$connect) {
         die("connection failed");
