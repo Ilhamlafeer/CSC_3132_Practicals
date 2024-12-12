@@ -1,7 +1,6 @@
 <?php
 // Get the db connection to file
 require_once 'dbconf.php';
-
 function PrintTables($connect, $tName, $attri) {
     try {
         // Query
